@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="verification_status_Verified <= 0.4\ngini = 0.3\nsamples = 658975\nvalue = [837321, 205222]"] ;
+1 [label="sub_grade_A2 <= 2.9\ngini = 0.3\nsamples = 445804\nvalue = [578143.0, 127583.0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="term <= 0.6\ngini = 0.3\nsamples = 430842\nvalue = [555671, 126502]"] ;
+1 -> 2 ;
+3 [label="gini = 0.2\nsamples = 336399\nvalue = [454668, 77831]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4\nsamples = 94443\nvalue = [101003, 48671]"] ;
+2 -> 4 ;
+5 [label="earliest_cr_line <= 5.3\ngini = 0.1\nsamples = 14962\nvalue = [22472, 1081]"] ;
+1 -> 5 ;
+6 [label="gini = 0.1\nsamples = 14960\nvalue = [22469, 1079]"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 2\nvalue = [3, 2]"] ;
+5 -> 7 ;
+8 [label="term <= 0.6\ngini = 0.4\nsamples = 213171\nvalue = [259178.0, 77639.0]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="emp_length <= 0.1\ngini = 0.3\nsamples = 148552\nvalue = [191444, 43116]"] ;
+8 -> 9 ;
+10 [label="gini = 0.3\nsamples = 84235\nvalue = [107062, 25986]"] ;
+9 -> 10 ;
+11 [label="gini = 0.3\nsamples = 64317\nvalue = [84382, 17130]"] ;
+9 -> 11 ;
+12 [label="int_rate <= 0.7\ngini = 0.4\nsamples = 64619\nvalue = [67734, 34523]"] ;
+8 -> 12 ;
+13 [label="gini = 0.4\nsamples = 26854\nvalue = [31946, 10416]"] ;
+12 -> 13 ;
+14 [label="gini = 0.5\nsamples = 37765\nvalue = [35788, 24107]"] ;
+12 -> 14 ;
+}
